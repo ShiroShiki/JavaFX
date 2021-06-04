@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="402.0" prefWidth="424.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="468.0" minWidth="367.0" prefWidth="468.0" />
+        <ColumnConstraints maxWidth="101.0" minWidth="0.0" prefWidth="0.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="398.0" prefWidth="437.0" GridPane.rowIndex="1">
+            <children>
+                <Label layoutX="81.0" layoutY="42.0" text="Login" />
+                <Label layoutX="81.0" layoutY="87.0" text="Password" />
+                <TextField fx:id="Login" layoutX="183.0" layoutY="42.0" />
+                <PasswordField fx:id="Password" layoutX="183.0" layoutY="83.0" />
+                <Label fx:id="TextLabel" layoutX="180.0" layoutY="117.0" prefHeight="32.0" prefWidth="159.0" text="Type the login and password" />
+                <Button layoutX="206.0" layoutY="160.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="108.0" text="Enter" />
+                <Button layoutX="206.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickTwo" prefHeight="25.0" prefWidth="108.0" text="Clear Fields" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
